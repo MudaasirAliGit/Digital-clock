@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #4a148c);
+    margin: 0;
+    overflow: hidden;
+}
+
+.digital-clock-body {
+    color: #fff;
+    text-shadow: 
+        0 0 8px #ff00ff,
+        0 0 16px #ff00ff,
+        0 0 24px #ff66ff;
+    height: 40%;
+    width: 80%;
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.digital-clock-body #ampm {
+    font-size: 2rem;
+}
+
+.digital-clock-body #days {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .digital-clock-body {
+        font-size: 3.5rem;
+    }
+    .digital-clock-body #days {
+        font-size: 1.5rem;
+    }
+    .digital-clock-body #ampm {
+        font-size: 1.5rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .digital-clock-body {
+        font-size: 2rem;
+    }
+    .digital-clock-body #days {
+        font-size: 1.2rem;
+    }
+    .digital-clock-body #ampm {
+        font-size: 1.2rem;
+    }
+}
